@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Lemon</title>
+  <meta name="description" content="A brief description" />
+  <meta name="author"
+    content="Based in Chicago, Illinois, Little Lemon is a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist." />
+</head>
+
+<body>
+  <section>
+    <article id="info">
+      <a href="{% url 'home' %}">Home</a><br />
+      http://127.0.0.1:8000 (default)
+      <p>
+        Django Admin Panel:<br />
+        <a href="/admin/" target="_blank">/admin/</a>
+      </p>
+      <hr />
+      <p>
+        Djoser Auth endpoints:</br />
+      <ul>
+        <li><a href="/auth/users/" target="_blank">/auth/users/</a></li>
+        <li><a href="/auth/users/me/" target="_blank">/auth/users/me/</a></li>
+        <li><a href="/auth/users/confirm/" target="_blank">/auth/users/confirm/</a></li>
+        <li><a href="/auth/users/resend_activation/" target="_blank">/auth/users/resend_activation/</a></li>
+        <li><a href="/auth/users/set_password/" target="_blank">/auth/users/set_password/</a></li>
+        <li><a href="/auth/users/reset_password/" target="_blank">/auth/users/reset_password/</a></li>
+        <li><a href="/auth/users/reset_password_confirm/" target="_blank">/auth/users/reset_password_confirm/</a></li>
+        <li><a href="/auth/users/set_username/" target="_blank">/auth/users/set_username/</a></li>
+        <li><a href="/auth/users/reset_username/" target="_blank">/auth/users/reset_username/</a></li>
+        <li><a href="/auth/users/reset_username_confirm/" target="_blank">/auth/users/reset_username_confirm/</a></li>
+        <li><a href="/auth/token/login/" target="_blank">/auth/token/login/</a></li>
+        <li><a href="/auth/token/logout/" target="_blank">/auth/token/logout/</a></li>
+      </ul>
+      Note that the links above are all GET requests, and not all endpoints accept GET. But it will still open the API
+      page in your browser and can be useful information.
+      </p>
+      <p>
+        Tip:<br />
+        For following the grading requirements, start with POST <a href="/auth/token/login/"
+          target="_blank">http://127.0.0.1:8000/auth/token/login/</a>, supplying the
+        username and password in URL encoded form to get a token.<br />
+        You can find a list of credentials in the logins.txt file.
+      </p>
+      <hr />
+      <p>
+        Application URLs. The 'API' endpoints for grading.
+      <ul>
+        <li><a href="/api/menu-items" target="_blank">/api/menu-items</a></li>
+        <li><a href="/api/bookings" target="_blank">/api/bookings</a></li>
+        <li><a href="/auth/users" target="_blank">/api/registration</a></li>
+      </ul>
+      api/registration actually points at auth/users. The assignment did not specify making a separate HTML file for
+      'signing up'.
+      </p>
+    </article>
+  </section>
+</body>
+
+</html>
